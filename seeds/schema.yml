@@ -1,6 +1,6 @@
 version: 2
 
-models:
+seeds:
   - name: seed_month
     columns:
       - name: month_number
