@@ -25,7 +25,7 @@
 <div align="center">
  
 
-  <h3 align="center">DatafestAfrica Datathon 2023 - Data Engineering Project</h3>
+  <h3 align="center">Team-DataWiz DatafestAfrica Datathon 2023 - Data Engineering Project</h3>
 
   <p align="center">
     A wrap-up project for the 3-day DatafestAfrica Datathon 2023!
