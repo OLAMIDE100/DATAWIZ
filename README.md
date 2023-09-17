@@ -53,8 +53,14 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#pipelines">Pipeline</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#pipeline">Pipeline</a></li>
+   <li>
+      <a href="#deliverables">Deliverables</a
+      <ul>
+        <li><a href="#jobs">Jobs</a></li>
+        <li><a href="#environments">Environments</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
     
   </ol>
@@ -114,6 +120,7 @@ This dataset simulates real-time agricultural sensor data, providing a rich sour
 - [x] Data Modelling (logical and business)
 - [x] Develop
 - [x] Test and Documentation
+- [x] Create Jobs
 - [x] Deploy to Production
 
 
@@ -124,6 +131,15 @@ See the [open issues](https://github.com/OLAMIDE100/Data-Engineering-Project/iss
 
 ![pipeline diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/pipeline.png)
 
+## Deliverables
+
+### Jobs
+
+![jobs diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Jobs.png)
+
+### Environments
+
+![environments diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Environments.png)
 
 <!-- CONTACT -->
 ## Contact
