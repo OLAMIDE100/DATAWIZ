@@ -23,20 +23,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="Images/data-engineering-logo.webp" alt="Logo" width="800" height="200">
-  </a>
+ 
 
   <h3 align="center">DatafestAfrica Datathon 2023 - Data Engineering Project</h3>
 
   <p align="center">
-    A wrap up project for the 3 days DatafestAfrica Datathon 2023!
+    A wrap-up project for the 3-day DatafestAfrica Datathon 2023!
     <br />
-    <a href="https://github.com/OLAMIDE100/Data-Engineering-Project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/OLAMIDE100/DATAWIZ"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     ·
-    <a href="https://github.com/OLAMIDE100/Data-Engineering-Project/issues">Report Bug</a>
+   
   </p>
 </div>
 
@@ -55,6 +53,7 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#pipelines">Pipeline</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#contact">Contact</a></li>
     
@@ -70,7 +69,7 @@
   <h1>Agricultural Monitoring Systems</h1>
   
   <a href="">
-    <img src="Images/Which-region-should-produce-Nigeria%E2%80%99s-next-president-in-2023.jpg" alt="Logo" width="800" height="200">
+    <img src="image/Precision-Agriculture.png" alt="Logo" width="800" height="200">
   </a>
  </div>
 
@@ -80,7 +79,7 @@ Our business operates in the agricultural sector, where monitoring various envir
 
 ### Architecture
 
-![architecture diagram](https://github.com/OLAMIDE100/Data-Engineering-Project/blob/main/Images/AWS%20Networking.png)
+![architecture diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/ETL.png)
 
 ### Built With
 
@@ -119,6 +118,11 @@ This dataset simulates real-time agricultural sensor data, providing a rich sour
 
 
 See the [open issues](https://github.com/OLAMIDE100/Data-Engineering-Project/issues) for a full list of proposed features (and known issues).
+
+<!-- Pipeline -->
+## Pipeline
+
+![pipeline diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/pipeline.png)
 
 
 <!-- CONTACT -->
