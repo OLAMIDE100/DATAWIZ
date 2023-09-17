@@ -7,12 +7,51 @@ models:
         description: The extracted month from the TIMESTAMP.
         tests:
           - not_null
-    
-      
-
       - name: _YEAR
         description: The extracted year from the TIMESTAMP as a string.
         tests:
           - not_null
        
+  - name: d_irrigation_methods
+    columns:
+      - name: IRRIGATION_METHOD_ID
+        description: A unique identifier for each irrigation method.
+        tests:
+          - not_null
+          - unique
+      - name: IRRIGATION_METHOD
+        description: The distinct irrigation method.
+        tests:
+          - not_null
+          - unique
+      - name: created_at
+        description: The timestamp when the row was created.
+        tests:
+          - not_null
 
+  - name: d_pest
+    columns:
+      - name: PEST_ID
+        description: The unique identifier for pests.
+        tests:
+          - unique
+          - not_null
+      - name: PEST
+        description: The pest type.
+        tests:
+          - unique
+      - name: CREATED_AT
+        description: The timestamp when the record was created.
+
+  - name: d_crop
+    columns:
+      - name: CROP_ID
+        tests:
+          - unique
+        description: Unique identifier for each crop.
+      - name: CROP
+        description: Crop type.
+        tests:
+          - unique
+      - name: created_at
+        description: Timestamp of when the record was created.

@@ -1,0 +1,11 @@
+WITH unique_pest AS (
+    SELECT DISTINCT PEST_TYPE
+    FROM {{ ref("dwh_pest") }}
+)
+
+SELECT
+    ROW_NUMBER() OVER (ORDER BY PEST_TYPE) AS PEST_ID,
+    PEST_TYPE AS PEST,
+    CURRENT_TIMESTAMP() AS created_at
+FROM unique_pest
+ORDER BY PEST_ID

@@ -10,4 +10,3 @@ WITH cleaned_data AS (
 
 
 SELECT * FROM cleaned_data 
-LIMIT 100

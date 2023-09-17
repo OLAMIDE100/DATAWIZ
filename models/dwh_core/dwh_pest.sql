@@ -8,4 +8,3 @@ WITH cleaned_data AS (
 
 SELECT * FROM cleaned_data 
 ORDER BY TIMESTAMP DESC
-LIMIT 100

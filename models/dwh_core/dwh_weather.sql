@@ -6,9 +6,8 @@ WITH cleaned_data AS (
     CAST(WIND_SPEED AS FLOAT) AS wind_speed
   FROM {{ ref("stg_weather")}}
   WHERE PRECIPITATION != 'NA' AND WIND_SPEED != 'NA'
-  LIMIT 100
+  
 )
 
 SELECT * FROM cleaned_data 
 ORDER BY TIMESTAMP DESC
-LIMIT 100

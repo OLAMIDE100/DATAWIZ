@@ -1,0 +1,11 @@
+WITH unique_crop AS (
+    SELECT DISTINCT CROP_TYPE
+    FROM {{ ref("dwh_crop") }}
+)
+
+SELECT
+    ROW_NUMBER() OVER (ORDER BY CROP_TYPE) AS CROP_ID,
+    CROP_TYPE AS CROP,
+    CURRENT_TIMESTAMP() AS created_at
+FROM unique_crop
+ORDER BY CROP_ID
