@@ -59,6 +59,7 @@
       <ul>
         <li><a href="#jobs">Jobs</a></li>
         <li><a href="#environments">Environments</a></li>
+        <li><a href="#runs">Runs</a></li>
       </ul>
     </li>
     
@@ -140,6 +141,12 @@ This dataset simulates real-time agricultural sensor data, providing a rich sour
 ### Environments
 
 ![environments diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Environments.png)
+
+### Runs
+
+![Hourly_transform_load_run_history](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Hourly_transform_load_run_history.png)
+
+![6_hours_test_run_history diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/6_hours_test_run_history.png)
 
 
 
