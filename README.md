@@ -61,7 +61,7 @@
         <li><a href="#environments">Environments</a></li>
       </ul>
     </li>
-    <li><a href="#contact">Contact</a></li>
+    
     
   </ol>
 </details>
@@ -141,10 +141,6 @@ See the [open issues](https://github.com/OLAMIDE100/Data-Engineering-Project/iss
 
 ![environments diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Environments.png)
 
-<!-- CONTACT -->
-## Contact
-
-Your Name - [Adesoba Adewale Olamide](https://www.linkedin.com/in/adesoba-olamide-gmnse-787193169/)
 
 Project Link: [2023 Political Arena](https://github.com/OLAMIDE100/Data-Engineering-Project)
 
