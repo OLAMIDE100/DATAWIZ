@@ -124,7 +124,7 @@ This dataset simulates real-time agricultural sensor data, providing a rich sour
 - [x] Deploy to Production
 
 
-See the [open issues](https://github.com/OLAMIDE100/Data-Engineering-Project/issues) for a full list of proposed features (and known issues).
+
 
 <!-- Pipeline -->
 ## Pipeline
@@ -142,8 +142,8 @@ See the [open issues](https://github.com/OLAMIDE100/Data-Engineering-Project/iss
 ![environments diagram](https://github.com/OLAMIDE100/DATAWIZ/blob/main/image/Environments.png)
 
 
-Project Link: [2023 Political Arena](https://github.com/OLAMIDE100/Data-Engineering-Project)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 
