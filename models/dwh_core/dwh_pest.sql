@@ -1,0 +1,11 @@
+WITH cleaned_data AS (
+  SELECT
+    TO_DATE(TIMESTAMP ,'MM/DD/YYYY HH24:MI') AS TIMESTAMP,
+    PEST_TYPE,
+    PEST_SEVERITY
+  FROM {{ ref("stg_pest") }}
+)
+
+SELECT * FROM cleaned_data 
+ORDER BY TIMESTAMP DESC
+LIMIT 100

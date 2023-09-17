@@ -1,0 +1,13 @@
+month_number,month_name,quarter,season
+1,January,Q1,DrySeason
+2,February,Q1,DrySeason
+3,March,Q1,DrySeason
+4,April,Q2,RainySeason
+5,May,Q2,RainySeason
+6,June,Q2,RainySeason
+7,July,Q3,RainySeason
+8,August,Q3,RainySeason
+9,September,Q3,RainySeason
+10,October,Q4,RainySeason
+11,November,Q4,DrySeason
+12,December,Q4,DrySeason
