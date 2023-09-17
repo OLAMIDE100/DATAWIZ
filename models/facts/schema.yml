@@ -7,65 +7,79 @@ models:
     columns:
       - name: TIMESTAMP
         description: The timestamp of the data records.
+        tests:
+          - not_null
+          - unique
       - name: AVG_WIND_SPEED
         description: The average wind speed recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_PRECIPITATION
         description: The average precipitation recorded at the timestamp.
+        tests:
+          - not_null
       - name: WEATHER_CONDITION
         description: The weather condition recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_SOIL_COMP
         description: The average soil composition recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_SOIL_MOISTURE
         description: The average soil moisture recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_SOIL_PH
         description: The average soil pH recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_PHOSPHORUS_LEVEL
         description: The average phosphorus level recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_NITROGEN_LEVEL
         description: The average nitrogen level recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_ORGANIC_MATTER
         description: The average organic matter content recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_TEMPERATURE
         description: The average temperature recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_HUMIDITY
         description: The average humidity recorded at the timestamp.
+        tests:
+          - not_null
       - name: AVG_LIGHT_INTENSITY
         description: The average light intensity recorded at the timestamp.
+        tests:
+          - not_null
       - name: NUM_DISTINCT_AFFECTED_CROPS
         description: The number of distinct affected crops recorded at the timestamp.
+        tests:
+          - not_null
       - name: NUM_DISTINCT_PESTS_RECORDED
         description: The number of distinct pests recorded at the timestamp.
+        tests:
+          - not_null
       - name: NUM__PESTS_ISSUES_RECORDED
         description: The total number of pest issues recorded at the timestamp.
+        tests:
+          - not_null
       - name: IRRIGATION_METHOD
         description: The irrigation method recorded at the timestamp.
+        tests:
+          - not_null
       - name: WATER_SOURCE
         description: The water source recorded at the timestamp.
+        tests:
+          - not_null
       - name: IRRIGATION_DURATION_MIN
         description: The duration of irrigation in minutes recorded at the timestamp.
-    tests:
-      - unique:
-          columns: [TIMESTAMP]
-      - not_null:
-          columns:
-            [
-              TIMESTAMP,
-              AVG_WIND_SPEED,
-              AVG_PRECIPITATION,
-              WEATHER_CONDITION,
-              AVG_SOIL_COMP,
-              AVG_SOIL_MOISTURE,
-              AVG_SOIL_PH,
-              AVG_PHOSPHORUS_LEVEL,
-              AVG_NITROGEN_LEVEL,
-              AVG_ORGANIC_MATTER,
-              AVG_TEMPERATURE,
-              AVG_HUMIDITY,
-              AVG_LIGHT_INTENSITY,
-              NUM_DISTINCT_AFFECTED_CROPS,
-              NUM_DISTINCT_PESTS_RECORDED,
-              NUM__PESTS_ISSUES_RECORDED,
-              IRRIGATION_METHOD,
-              WATER_SOURCE,
-              IRRIGATION_DURATION_MIN,
-            ]
+        tests:
+          - not_null
+    
