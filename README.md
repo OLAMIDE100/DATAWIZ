@@ -55,7 +55,7 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#pipeline">Pipeline</a></li>
    <li>
-      <a href="#deliverables">Deliverables</a
+      <a href="#deliverables">Deliverables</a>
       <ul>
         <li><a href="#jobs">Jobs</a></li>
         <li><a href="#environments">Environments</a></li>
