@@ -12,9 +12,8 @@ WITH cleaned_data AS (
     AND HUMIDITY != 'NA'
     AND SOIL_MOISTURE != 'NA'
     AND LIGHT_INTENSITY != 'NA'
-  LIMIT 100
+
 )
 
 SELECT * FROM cleaned_data 
 ORDER BY TIMESTAMP DESC
-LIMIT 100

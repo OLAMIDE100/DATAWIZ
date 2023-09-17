@@ -1,7 +1,12 @@
 WITH cleaned_data AS (
   SELECT
     TO_DATE(TIMESTAMP, 'MM/DD/YYYY HH24:MI') AS TIMESTAMP,
-    CROP_TYPE,
+    CASE
+        WHEN REGEXP_LIKE(CROP_TYPE, '^[Corn]+$') THEN 'Corn'
+        WHEN REGEXP_LIKE(CROP_TYPE, '^[Wheat]+$') THEN 'Wheat'
+    ELSE
+        CROP_TYPE    
+    END CROP_TYPE,
     CAST(CROP_YIELD AS FLOAT) AS CROP_YIELD,
     GROWTH_STAGE,
     PEST_ISSUE
@@ -16,4 +21,3 @@ WITH cleaned_data AS (
 SELECT *
 FROM cleaned_data
 ORDER BY TIMESTAMP
-LIMIT 100
