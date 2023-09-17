@@ -1,0 +1,152 @@
+version: 2
+
+models:
+  - name: dwh_crop
+    columns:
+      - name: TIMESTAMP
+        tests:
+          - not_null
+        description: The timestamp of the data point.
+      - name: CROP_TYPE
+        tests:
+          - not_null
+        description: The type of crop.
+      - name: CROP_YIELD
+        tests:
+          - not_null
+          
+        description: The crop yield as a floating-point number.
+      - name: GROWTH_STAGE
+        tests:
+          - not_null
+        description: The growth stage of the crop.
+      - name: PEST_ISSUE
+        tests:
+          - not_null
+        description: Information about pest issues.
+
+  - name: dwh_irrigation
+    columns:
+      - name: SENSOR_ID
+        tests:
+          - not_null
+      - name: TIMESTAMP
+        tests:
+          - not_null
+      - name: IRRIGATION_METHOD
+        tests:
+          - not_null
+      - name: WATER_SOURCE
+        tests:
+          - not_null
+      - name: IRRIGATION_DURATION_MIN
+        tests:
+          - not_null
+
+  - name: dwh_location
+    columns:
+      - name: SENSOR_ID
+        description: The extracted SENSOR_ID
+      - name: LATITUDE
+        description: The latitude of the location
+      - name: LONGITUDE
+        description: The longitude of the location
+      - name: ELEVATION
+        description: The elevation of the location
+      - name: REGION
+        description: The region of the location
+
+  - name: dwh_pest
+    columns:
+      - name: TIMESTAMP
+        description: The parsed timestamp in MM/DD/YYYY HH24:MI format.
+        tests:
+          - not_null
+      - name: PEST_TYPE
+        description: The type of pest.
+        tests:
+          - not_null
+      - name: PEST_SEVERITY
+        description: The severity of the pest.
+        tests:
+          - not_null
+  
+  - name: dwh_sensor
+    columns:
+      - name: SENSOR_ID
+        tests:
+          - not_null
+      - name: TIMESTAMP
+        tests:
+          - not_null
+      - name: TEMPERATURE
+        tests:
+          - not_null
+      - name: HUMIDITY
+        tests:
+          - not_null
+      - name: SOIL_MOISTURE
+        tests:
+          - not_null
+      - name: LIGHT_INTENSITY
+        tests:
+          - not_null
+
+  - name: dwh_soil
+    columns:
+      - name: TIMESTAMP
+        description: The timestamp of the soil data.
+        tests:
+          - not_null
+      - name: SOIL_PH
+        description: The pH level of the soil.
+        tests:
+          - not_null        
+      - name: SOIL_MOISTURE
+        description: The moisture level of the soil.
+        tests:
+          - not_null       
+      - name: SOIL_COMP
+        description: The composition of the soil.
+        tests:
+          - not_null      
+      - name: PHOSPHORUS_LEVEL
+        description: The phosphorus level in the soil.
+        tests:
+          - not_null
+      - name: ORGANIC_MATTER
+        description: The organic matter content in the soil.
+        tests:
+          - not_null
+      - name: NITROGEN_LEVEL
+        description: The nitrogen level in the soil.
+        tests:
+          - not_null
+          
+  
+  - name: dwh_weather
+    columns:
+      - name: timestamp
+        description: The timestamp of the weather data.
+        tests:
+          - not_null
+      - name: weather_condition
+        description: The weather condition.
+        tests:
+          - not_null
+      - name: precipitation
+        description: The precipitation in float format.
+        tests:
+          - not_null
+      - name: wind_speed
+        description: The wind speed in float format.
+        tests:
+          - not_null     
+
+
+
+
+
+
+
+

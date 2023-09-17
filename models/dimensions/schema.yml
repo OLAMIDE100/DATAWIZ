@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: d_dates
+    columns:
+      - name: _MONTH
+        description: The extracted month from the TIMESTAMP.
+        tests:
+          - not_null
+    
+      
+
+      - name: _YEAR
+        description: The extracted year from the TIMESTAMP as a string.
+        tests:
+          - not_null
+       
+

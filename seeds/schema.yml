@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: seed_months
+    columns:
+      - name: month_number
+        description: The month number (1-12)
+        tests:
+          - unique
+      - name: month_name
+        description: The name of the month
+      - name: quarter
+        description: The quarter of the year
+      - name: season
+        description: The season of the year

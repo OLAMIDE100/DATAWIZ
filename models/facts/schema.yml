@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: f_daily_average_records.sql
+    description: |
+      This model combines data from multiple sources and aggregates it by timestamp.
+    columns:
+      - name: TIMESTAMP
+        description: The timestamp for the aggregated data.
+        tests:
+          - not_null
+          - unique
+      - name: AVG_WIND_SPEED
+        description: The average wind speed.
+        tests:
+          - not_null
+      - name: AVG_PRECIPITATION
+        description: The average precipitation.
+        tests:
+          - not_null
+      - name: WEATHER_CONDITION
+        description: The maximum weather condition.
+        tests:
+          - not_null
+      - name: AVG_SOIL_COMP
+        description: The average soil comp value.
+        tests:
+          - not_null
+      - name: AVG_SOIL_MOISTURE
+        description: The average soil moisture value.
+        tests:
+          - not_null
+      - name: AVG_SOIL_PH
+        description: The average soil pH value.
+        tests:
+          - not_null
+      - name: AVG_PHOSPHORUS_LEVEL
+        description: The average phosphorus level.
+        tests:
+          - not_null
+      - name: AVG_NITROGEN_LEVEL
+        description: The average nitrogen level.
+        tests:
+          - not_null
+      - name: AVG_ORGANIC_MATTER
+        description: The average organic matter value.
+        tests:
+          - not_null
+      - name: AVG_TEMPERATURE
+        description: The average temperature.
+        tests:
+          - not_null
+      - name: AVG_HUMIDITY
+        description: The average humidity.
+        tests:
+          - not_null
+      - name: AVG_LIGHT_INTENSITY
+        description: The average light intensity.
+        tests:
+          - not_null
+      - name: NUM_DISTINCT_AFFECTED_CROPS
+        description: The number of distinct affected crops.
+        tests:
+          - not_null
+      - name: NUM_DISTINCT_PESTS_RECORDED
+        description: The number of distinct pests recorded.
+        tests:
+          - not_null
+      - name: IRRIGATION_METHOD
+        description: The maximum irrigation method.
+        tests:
+          - not_null
+      - name: WATER_SOURCE
+        description: The maximum water source.
+        tests:
+          - not_null
+      - name: IRRIGATION_DURATION_MIN
+        description: The sum of irrigation durations in minutes.
+        tests:
+          - not_null
+
