@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: f_daily_average_records.sql
+  - name: f_daily_average_records
     description: |
       This model combines weather, soil, sensor, crop, and irrigation data for analysis.
     columns:
