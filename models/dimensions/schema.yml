@@ -12,7 +12,7 @@ models:
         tests:
           - not_null
        
-  - name: d_irrigation_methods
+  - name: d_irrigation_method
     columns:
       - name: IRRIGATION_METHOD_ID
         description: A unique identifier for each irrigation method.
